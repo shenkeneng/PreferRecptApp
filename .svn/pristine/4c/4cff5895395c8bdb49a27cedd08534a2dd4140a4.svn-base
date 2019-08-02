@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="run_environments">
+        <item>线上环境[%1$s]</item>
+        <item>测试环境[%1$s]</item>
+        <item>预发布环境[%1$s]</item>
+    </string-array>
+</resources>

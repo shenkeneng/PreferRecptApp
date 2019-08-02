@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/action_back_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:drawableLeft="@drawable/selector_back_view"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp" />
+
+    <com.frxs.common_base.widget.ClearEditText
+        android:id="@+id/search_content_et"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/spacing_tiny"
+        android:drawableLeft="@mipmap/ic_search"
+        android:paddingLeft="@dimen/spacing_tiny"
+        android:drawablePadding="@dimen/spacing_tiny"
+        android:background="@drawable/shape_edit"
+        android:singleLine="true"
+        android:text=""
+        android:hint="@string/search_hint"
+        android:textColorHint="@color/frxs_gray"
+        android:textColor="@color/frxs_black"
+        android:textSize="@dimen/font_normal" />
+
+    <TextView
+        android:id="@+id/action_right_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="刷新"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+</LinearLayout>

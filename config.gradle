@@ -1,0 +1,58 @@
+/*全局配置信息及第三方依赖统一管理*/
+ext {
+    //isModule false;  表示整个app运行, true: 表示单独运行某一个module
+    isModule = false
+    //false:作为Lib组件存在，true:作为application存在(其他module同理)
+    moduleShopMall = false
+    moduleCommonUi = false
+
+    androidCompileSdkVersion = 26
+    applicationId =  "com.frxs.wmsrecpt"
+
+    android = [
+            compileSdkVersion       : 26,
+            buildToolsVersion       : '26.0.2',
+            minSdkVersion           : 19,
+            targetSdkVersion        : 26,
+            versionCode             : 1,
+            versionName             : "1.9.14",
+            applicationId           : "com.frxs.wmsrecpt",
+
+            androidSupportSdkVersion: "27.0.2"
+
+    ]
+
+    dependencies = [
+            "appcompat_v7"                   :"com.android.support:appcompat-v7:${android["androidSupportSdkVersion"]}",
+            "runner"                         : 'com.android.support.test:runner:1.0.2',
+            "design"                         : "com.android.support:design:${android["androidSupportSdkVersion"]}",
+
+            //网络
+            "retrofit2"                      : 'com.squareup.retrofit2:retrofit:2.3.0',
+            "converter-gson"                 : 'com.squareup.retrofit2:converter-gson:2.3.0',
+            "logging-interceptor"            : 'com.squareup.okhttp3:logging-interceptor:3.4.1',
+            "adapter-rxjava2"                : 'com.squareup.retrofit2:adapter-rxjava2:2.3.0',
+            "rxjava2:rxandroid"              : 'io.reactivex.rxjava2:rxandroid:2.0.1',
+            "rxjava2"                        : 'io.reactivex.rxjava2:rxjava:2.1.0',
+
+            "glide"                          : 'com.github.bumptech.glide:glide:4.5.0',
+
+            //黄油刀
+            "butterknife_compiler"           : 'com.jakewharton:butterknife-compiler:8.4.0',
+            "butterknife"                    : 'com.jakewharton:butterknife:8.4.0',
+
+            "smartRefreshLayout"             : 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1',
+            "thepacific_adapter"             : 'com.github.thepacific:adapter:1.0.5',
+            "baserecyclerview_adapter"       : 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30',
+            "recyclerview-swipe"             : 'com.yanzhenjie:recyclerview-swipe:1.1.4',
+
+            "greendao"                       : 'org.greenrobot:greendao:3.2.2',
+            "vlayout"                       : 'com.alibaba.android:vlayout:1.2.6@aar',
+            "banner"                         : 'com.youth.banner:banner:1.4.10',
+            "SuperTextView"                  : 'com.github.chenBingX:SuperTextView:v3.0.0',
+            //检测更新
+            "versioncheck"                  : 'com.allenliu.versionchecklib:library:2.0.5',
+
+            "printerlibrary"                 : 'com.sunmi:printerlibrary:1.0.4'
+    ]
+}
